@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { FormLabel, FormInput, FormStyle, BtnSubmit } from "./Form.styles";
 import { MdPersonAdd } from "react-icons/md";
 import { connect } from "react-redux";
-// import actions from '../../redux/actions'
 import * as actions from "../../redux/actions";
 
 class Form extends Component {

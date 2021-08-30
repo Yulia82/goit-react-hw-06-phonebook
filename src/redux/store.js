@@ -36,14 +36,6 @@ const persistConfig = {
   blacklist: ["filter"],
 };
 
-// --------localStorage
-// const rootReducer = combineReducers({
-//     fhonebook: persistReducer(persistConfig, reducer),
-//     },
-// )
-// const persistedReducer = persistReducer(persistConfig, rootReducer);
-// ----------------------------
-
 export const store = configureStore({
   reducer: persistReducer(persistConfig, reducer),
   middleware,
@@ -51,5 +43,3 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
-
-// export default { store};
